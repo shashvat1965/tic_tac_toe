@@ -15,11 +15,13 @@ class GameLogic {
       if (gridDesc[0] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[0] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -27,11 +29,13 @@ class GameLogic {
       if (gridDesc[3] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[3] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -39,11 +43,13 @@ class GameLogic {
       if (gridDesc[6] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[6] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -53,11 +59,13 @@ class GameLogic {
       if (gridDesc[0] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[0] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -65,11 +73,13 @@ class GameLogic {
       if (gridDesc[1] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[1] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -77,11 +87,13 @@ class GameLogic {
       if (gridDesc[2] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[2] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -91,11 +103,13 @@ class GameLogic {
       if (gridDesc[0] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[0] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
@@ -103,11 +117,13 @@ class GameLogic {
       if (gridDesc[2] == GridTileType.playerAMove) {
         winnerDecided = true;
         winnerName = playerAName;
+        playerAScore++;
         return;
       }
       if (gridDesc[2] == GridTileType.playerBMove) {
         winnerDecided = true;
         winnerName = playerBName;
+        playerBScore++;
         return;
       }
     }
