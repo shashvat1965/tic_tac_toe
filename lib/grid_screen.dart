@@ -55,7 +55,7 @@ class _GridScreenState extends State<GridScreen> {
       if (!gameLogic.winnerDecided && gameLogic.moveNumber != 9) {
         setState(() {});
       } else {
-        getSnackBar(gameLogic.winnerName!, context);
+        getSnackBar(gameLogic.winnerName, context);
         gameLogic.gridDesc = List.from(initialGridDesc);
         gameLogic.moveNumber = 0;
         gameLogic.winnerDecided = false;
