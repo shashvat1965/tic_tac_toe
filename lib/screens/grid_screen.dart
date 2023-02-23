@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tic_tac_toe/logic.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 class GridScreen extends StatefulWidget {
   const GridScreen(

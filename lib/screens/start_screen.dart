@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tic_tac_toe/grid_screen.dart';
+import 'package:tic_tac_toe/screens/grid_screen.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 class StartScreen extends StatefulWidget {
   const StartScreen({Key? key}) : super(key: key);
