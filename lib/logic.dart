@@ -5,8 +5,8 @@ class GameLogic {
   int playerBScore = 0;
   int moveNumber = 0;
   bool winnerDecided = false;
-  String? winnerName;
-  List<GridTileType> gridDesc = initialGridDesc.toList();
+  String? winnerName = "Draw";
+  List<GridTileType> gridDesc = List.from(initialGridDesc);
   GameLogic({this.playerAName = "Player A", this.playerBName = "Player B"});
 
   void checkWin() {
