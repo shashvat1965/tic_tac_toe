@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class GameLogic {
   String playerAName;
   String playerBName;
@@ -18,6 +20,11 @@ class GameLogic {
     GridTileType.noMove
   ];
   GameLogic({this.playerAName = "Player A", this.playerBName = "Player B"});
+
+
+  void restartGame(BuildContext context) {
+    Navigator.pop(context);
+  }
 
   void checkWin() {
     //Horizontal Checks
@@ -138,6 +145,13 @@ class GameLogic {
       }
     }
   }
+}
+
+extension ResetScore on GameLogic {
+    void get resetScore {
+      playerBScore = 0;
+      playerAScore = 0;
+    }
 }
 
 enum GridTileType {

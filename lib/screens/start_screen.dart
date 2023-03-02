@@ -12,10 +12,11 @@ class StartScreen extends StatefulWidget {
 }
 
 class _StartScreenState extends State<StartScreen> {
+  String? playerAName;
+  String? playerBName;
+
   @override
   Widget build(BuildContext context) {
-    String? playerAName;
-    String? playerBName;
     return Scaffold(
         resizeToAvoidBottomInset: true,
         backgroundColor: Colors.black,

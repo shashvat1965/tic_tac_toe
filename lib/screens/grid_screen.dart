@@ -82,7 +82,33 @@ class _GridScreenState extends State<GridScreen> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 200),
+            padding: const EdgeInsets.only(top: 100),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                    onPressed: () {
+                      setState(() {
+                        gameLogic.resetScore;
+                      });
+                    },
+                    icon: Icon(
+                      Icons.restart_alt,
+                      color: ColorConstants.colourList[0],
+                    )),
+                IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: Icon(
+                      Icons.close,
+                      color: ColorConstants.colourList[3],
+                    )),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 100),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -101,8 +127,9 @@ class _GridScreenState extends State<GridScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(right: 10, left: 10, top: 50),
+            padding: const EdgeInsets.only(right: 10, left: 10, top: 80),
             child: GridView.builder(
+              padding: const EdgeInsets.symmetric(horizontal: 5),
               shrinkWrap: true,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3, mainAxisSpacing: 10, crossAxisSpacing: 10),
