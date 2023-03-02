@@ -6,7 +6,17 @@ class GameLogic {
   int moveNumber = 0;
   bool winnerDecided = false;
   String winnerName = "Draw!";
-  List<GridTileType> gridDesc = List.from(initialGridDesc);
+  List<GridTileType> gridDesc = [
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove,
+    GridTileType.noMove
+  ];
   GameLogic({this.playerAName = "Player A", this.playerBName = "Player B"});
 
   void checkWin() {
@@ -129,18 +139,6 @@ class GameLogic {
     }
   }
 }
-
-List<GridTileType> initialGridDesc = [
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove,
-  GridTileType.noMove
-];
 
 enum GridTileType {
   noMove,

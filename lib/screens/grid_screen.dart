@@ -56,7 +56,17 @@ class _GridScreenState extends State<GridScreen> {
         setState(() {});
       } else {
         getSnackBar(gameLogic.winnerName, context);
-        gameLogic.gridDesc = List.from(initialGridDesc);
+        gameLogic.gridDesc = [
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove,
+          GridTileType.noMove
+        ];
         gameLogic.moveNumber = 0;
         gameLogic.winnerDecided = false;
         setState(() {});
